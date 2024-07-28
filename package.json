@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "project",
@@ -14,9 +14,12 @@
   "author": "ajay saini",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "prettier": "3.3.3"
   },
   "dependencies": {
-    "prettier": "^3.3.3"
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "mongoose": "8.5.1"
   }
 }
